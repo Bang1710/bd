@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy birthday</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://hinhanhdephd.com/wp-content/uploads/2017/04/anh-banh-kem-sinh-nhat.jpg" type="image/x-icon">
-</head>
-<body>
-    <div class="container">
-        <img src="./src/img/background1.png" alt="" class="img">
-        <div class="content">
-            <div class="avatar">
-                <img src="./src/img/293288631_1822148008117039_2391372251931397939_n.jpg" alt="">
-            </div>
-            <div class="letter">
-                Chúc mừng sinh nhật cậu nha, mong hôm nay sẽ là ngày hạnh phúc nhất của cậu.
-                
-                
-            </div>
-            <div class="btn">Cậu bấm vào đây nhe !</div>
-        </div>
-        <audio onload="playvideo()" src="./src/video/music.mp3" id="player" autoplay loop></audio>
-    </div>
-    <script src="./main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>A small gift for you on your birthday</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="https://hinhanhdephd.com/wp-content/uploads/2017/04/anh-banh-kem-sinh-nhat.jpg"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<img src="./src/img/background1.png" alt="" class="img" />
+			<div class="content">
+				<div class="avatar">
+					<img
+						src="./src/img/293288631_1822148008117039_2391372251931397939_n.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="letter">
+					Chúc mừng sinh nhật cậu nha, Chúc cậu có một sinh nhật thật hạnh phúc. <3
+				</div>
+				<button class="myBtn">Cậu bấm vào đây nhe !</button>
+			</div>
+		</div>
+        <!-- <span class="close">&times;</span> -->
+
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+                <div class="img-content">
+                    <span class="close">&times;</span>
+                    <p id="type-effect">Chỉ là tớ có vài lời muốn nói với cậu.
+                        Cũng đã lâu rồi hai đứa cũng chưa nói chuyện với nhau, và tớ cũng không biết
+                        hiện tại cuộc sống của cậu như thế nào, có tốt không, học tập có tốt không, do 
+                        tớ cũng k thấy cậu đăng gì mạng xã hội cả. Mà cho tớ hỏi cái này có phải mỗi lần cậu nhắn
+                        tin với tớ thì cậu nghĩ là sẽ làm phiền tới tớ, cái này cũng không biết phải không, 
+                        mà chắc là do tui nghĩ tào lao hihi, riết rồi tớ thấy tớ cũng bắt đầu ngại khi muốn nhắn
+                        tin cho cậu, nhưng mà tui thấy là mình có thể bình thường lại không, chứ sao tui thấy có khoảng cách,
+                        cảm giác bùn lắm, cản giác có những người bạn mà sao tui cảm thấy lạc lõng quá. Chỉ là 
+                        tớ có vài điều muốn tâm sự hui nè. Cuối cùng thì chúc cậu có một sinh nhật thiệt vui vẻ nè,
+                        cũng 20 tủi rùi, cũng được gọi là lớn rùi, chúc cậu luôn thành công trên mọi chặng đường sắp tới nha !. 
+                                                    Happy Birthday to you !!!
+                    </p>
+                    <img src="./src/img/pngtree-pink-orange-dreamy-cute-leaf-wedding-invitation-letter-paper-background-image_522668.jpg" alt="" class="img-modal">
+                </div>
+			</div>
+		</div>
+
+        <audio onload="playvideo()" src="./src/audio/9convert.com - Best Happy Birthday To You  Happy Birthday Songs 2020.mp3" id="player" autoplay loop></audio>
+        <script src="./main.js"></script>
+	</body>
 </html>

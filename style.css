@@ -63,10 +63,6 @@ button {
   left: 0;
   width: 100%;
   height: 100vh;
-  /* background-image: url('../src/img/background1.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .img {
@@ -84,34 +80,21 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 10px; */
   width: 100%;
-  /* height: 100vh; */
   top: 70%;
   left: 51%;
   transform: translate(-50%, -50%);
 }
 
 .avatar {
-  /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
   height: 120px;
   border: 2px solid red;
-  /* position: absolute; */
   width: 120px;
   border-radius: 50%;
   overflow: hidden;
-  /* margin-bottom: 40px; */
-  /* top: 55%;
-    left: 51%;
-    transform: translate(-50%, -50%); */
 }
 
-@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
-
-.btn {
+.myBtn {
   background-color: #c47135;
   border: none;
   color: #ffffff;
@@ -128,16 +111,10 @@ button {
   text-transform: inherit;
   font-weight: 500;
   letter-spacing: 1px;
-  /* position: absolute;
-    width: fit-content;
-    justify-content: center;
-    top: 71%;
-    left: 47.2%;
-    transform: translate(-50%, -50%); */
 }
 
-.btn:before,
-.btn:after {
+.myBtn:before,
+.myBtn:after {
   border-color: transparent;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -149,7 +126,7 @@ button {
   width: 24px;
 }
 
-.btn:before {
+.myBtn:before {
   border-color: #c47135;
   border-right-width: 2px;
   border-top-width: 2px;
@@ -157,7 +134,7 @@ button {
   top: -5px;
 }
 
-.btn:after {
+.myBtn:after {
   border-bottom-width: 2px;
   border-color: #c47135;
   border-left-width: 2px;
@@ -165,15 +142,15 @@ button {
   left: -5px;
 }
 
-.btn:hover,
-.btn.hover {
+.myBtn:hover,
+.myBtn.hover {
   background-color: #c47135;
 }
 
-.btn:hover:before,
-.btn.hover:before,
-.btn:hover:after,
-.btn.hover:after {
+.myBtn:hover:before,
+.myBtn.hover:before,
+.myBtn:hover:after,
+.myBtn.hover:after {
   height: 100%;
   width: 100%;
 }
@@ -188,4 +165,108 @@ button {
   margin-left: 9px;
   font-size: 1.4rem;
   margin-right: 10px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  /* border: 1px solid #888; */
+  width: fit-content;
+  height: 100%;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.img-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
+
+.img-modal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#type-effect {
+  position: absolute;
+  top: 40px;
+  width: 420px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 23px;
+  font-family: 'Uchen', serif;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: #f44336;
+  top: -10px;
+  right: -3px;
+  font-weight: 400;
+  font-size: 62px;
+  /* background-color: #fff8e1; */
+  padding: 0px 0;
+  border-radius: 50%;
+  padding: 0 10px 10px 0;
+  /* height: 100px; */
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
 }
