@@ -63,10 +63,19 @@ button {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('../src/img/background1.png');
+  /* background-image: url('../src/img/background1.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .content {
@@ -75,9 +84,10 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* margin-top: 10px; */
   width: 100%;
   /* height: 100vh; */
-  top: 60%;
+  top: 70%;
   left: 51%;
   transform: translate(-50%, -50%);
 }
@@ -109,14 +119,14 @@ button {
   display: flex;
   font-family: 'Uchen', serif;
   font-size: 1em;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1em;
-  margin: 15px 40px;
+  margin: 10px 0px 15px;
   outline: none;
-  padding: 12px 40px 10px;
+  padding: 10px 20px 10px;
   position: relative;
   text-transform: inherit;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
   /* position: absolute;
     width: fit-content;
@@ -170,8 +180,8 @@ button {
 
 .letter {
   font-family: 'Uchen', serif;
-  width: 290px;
-  margin-top: 52.2px;
+  width: 250px;
+  margin-top: 20px;
   letter-spacing: -0.9px;
   font-weight: 600;
   line-height: 2.1rem;
